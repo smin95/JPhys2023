@@ -18,5 +18,5 @@ ci <- NA
 quantile(corPerm, 0.025) # lower end of 95% confidence interval
 quantile(corPerm, 0.975) # upper end of 95% confidence interval
 
-p_val <- (sum(corPerm>= cor(abs(glx_ind1), auc_ind1))+1)/length(corPerm)
+p_val <- (sum(corPerm>= cor(glx_ind1, auc_ind1))+1)/length(corPerm)
 p_val # p-value might differ due to the nature of generating random numbers
